@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "PORT=4000 nodemon src/app.js",
+    "dev": "nodemon src/app.js",
     "prisma:migrate": "./node_modules/.bin/prisma migrate dev",
     "prisma:migrate:reset": "./node_modules/.bin/prisma migrate reset",
     "prisma:migrate:status": "./node_modules/.bin/prisma migrate status",
