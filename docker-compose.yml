@@ -19,6 +19,7 @@ services:
       - tms
 
   storage:
+    container_name: storage
     build:
       context: ./micro_services/storage
       dockerfile: Dockerfile.local

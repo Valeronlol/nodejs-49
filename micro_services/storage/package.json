@@ -5,6 +5,8 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon src/app.js",
+    "docker:start": "docker-compose up -d && docker attach storage_service",
+    "docker:stop": "docker-compose down",
     "prisma:migrate": "./node_modules/.bin/prisma migrate dev",
     "prisma:migrate:reset": "./node_modules/.bin/prisma migrate reset",
     "prisma:migrate:status": "./node_modules/.bin/prisma migrate status",
